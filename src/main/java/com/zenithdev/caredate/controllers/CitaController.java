@@ -39,7 +39,7 @@ public class CitaController {
 
     @PostMapping
     public Cita create(@RequestBody Cita cita){
-        cita.setEstatus("Pendiente");
+//        cita.setEstatus("Pendiente");
         return citaRepository.save(cita);
     }
 
